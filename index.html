@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty kart</title>
+    <script
+      src="https://kit.fontawesome.com/445205b9df.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div id="upper">
+        <div class="box1">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="error"
+          />
+        </div>
+        <form class="form">
+          <input type="text" name="" id="ip" placeholder="Search Here...." />
+          <input type="submit" value="Search" />
+        </form>
+        <div class="box2">
+          <div>
+            <img
+              src="https://img.icons8.com/ios-glyphs/2x/user.png"
+              alt="error"
+            />
+          </div>
+          <div>
+            <a href="login.html"><p>Login/Register</p></a>
+          </div>
+        </div>
+        <div class="box3">
+          <div>
+            <img
+              src="https://img.icons8.com/ios-glyphs/2x/shopping-bag.png"
+              alt="error"
+            />
+          </div>
+          <div>
+            <img
+              src="https://img.icons8.com/fluency-systems-filled/2x/like.png"
+              alt="error"
+            />
+          </div>
+          <div>
+            <img
+              src="https://in.sugarcosmetics.com/desc-images/discountIcon.svg"
+              alt="error"
+            />
+          </div>
+        </div>
+</div>
+
+<!-- <--------Lower------>
+<header>        
+    <nav id="navbar">
+        <ul>
+            <li><a href="brush.html" target="_self">MAKE UP</a>
+            <ul class="dd1">
+                <li>LIPS</li>
+                <li>FACE</li>
+                <li>EYES</li>
+            </ul>
+            </li>
+            <li><a href="brush.html" target="_self">BRUSHES</a>
+            <ul class="dd1">
+                <li>FACE BRUSHES</li>
+                <li>EYE BRUSHES</li>
+            </ul>
+            </li>
+            <li><a href="#">SKIN CARE</a>
+            <ul class="dd1">
+                <li>MOISTERISER</li>
+                <li>SUNSCREEN</li>
+                <li>SETTING MIST</li>
+                <li>COFEE CULTURE RANGE</li>
+                <li>SHEET MASK COMBO</li>
+                <li>CITRUS GOT REAL RANGE</li>
+                <li>AQUAHOLIC RANGE</li>
+                <li>MASKS</li>
+            </ul>
+            </li>
+            <li><a href="trending.html" target="_self">TRENDING</a>
+            <ul class="dd1">
+                <li>SUGAR MERCH STATION</li>
+                <li>MAKEUP KITS</li>
+                <li>BEST SELLER</li>
+                <li>SUGAR SETS</li>
+                <li>VALUE SETS</li>
+            </ul>
+            </li>
+            <li><a href="Blog.html" target="_self">BLOG</a>
+            <ul class="dd1">
+                <li>FEATURED</li>
+                <li>MAKEUP</li>
+                <li>SKINCARE</li>
+            </ul>
+            </li>
+            <li><a href="offer.html" target="_self">OFFER</a></li>
+            <li><a href="#">STORE</a></li>
+        </ul>
+    </nav>
+</header>
+    <!----------------Header End------------------->
+
+ <!----------------Content Start------------------->
+
+    <!-- /* <------crouser-1 start------->
+
+        <div id="cr1">
+            <img
+              class="crauser1"
+              src="https://d32baadbbpueqt.cloudfront.net/Homepage/eedba493-c795-435f-b323-a026045a571b.gif"
+              alt="error"
+            />
+            <button class="btn1">></button>
+            <button class="btn2"><</button>
+          </div> 
+
+    <!-- /* <------crouser-1 start------->
+        <p class="allP">REFER YOUR FRIENDS</p>
+
+        <div class="ryf">
+          <img
+            src="https://d32baadbbpueqt.cloudfront.net/Homepage/b7d9027a-a2c1-442e-a804-424d703a64d3.jpg"
+            alt="Error"
+          />
+        </div>
+    
+        <p class="allP">CONTOUR DE FORCE EYES & FACE PALETTE</p>
+    
+        <div id="vidCont">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1_CEXA8sfY8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+    
+        <p class="allP">BESTSELLERS</p>
+        <!-- <------Cards-1 start----------->
+    <div class="container">
+        <div class="card">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861"
+            alt="Error"
+          />
+          <p>METTLE PRIMING BALM</p>
+          <p>₹ 1099</p>
+          <div><p>ADD TO CART</p></div>
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116"
+            alt="Error"
+          />
+          <p>AIR KISS POWDER LIPSTICK</p>
+          <p>₹ 499</p>
+          <div><p>SELECT SHADE</p></div>
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771"
+            alt="Error"
+          />
+          <p>BLING LEADER SUNSCREEN</p>
+          <p>₹ 599</p>
+          <div><p>SELECT SHADE</p></div>
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813"
+            alt="Error"
+          />
+          <p>SMUDGE ME NOT LIQUID LIPSTICK</p>
+          <p>₹ 499</p>
+          <div><p>SELECT SHADE</p></div>
+        </div>
+      </div>
+      <!-- <------Cards-1 end----------->
+      <p class="allP">QUICK BEAUTY TIPS WITH BEAUTY KART</p>
+      <!-- /* <------crouser-2 start------->
+      <div id="cr2">
+        <img
+          class="crauser2"
+          src="https://d32baadbbpueqt.cloudfront.net/Homepage/64f2889d-e2d9-4047-82cd-e0e820230a77.jpg"
+          alt="error"
+        />
+        <button class="btn3">></button>
+        <button class="btn4"><</button>
+      </div>
+      <!-- /* <------crouser-2 end------->
+      <p class="allP">HOT DEALS</p>
+      <div class="hotDeal">
+        <div>
+          <img
+            src="https://d32baadbbpueqt.cloudfront.net/Homepage/8cd53b0d-bb7e-4842-9ddf-1c8666484ee0.jpg"
+            alt="Error"
+          />
+        </div>
+        <div>
+          <img
+            src="https://d32baadbbpueqt.cloudfront.net/Homepage/b8278548-ed11-44b4-9818-25c5146c604d.jpg"
+            alt="Error"
+          />
+        </div>
+        <div>
+          <img
+            src="https://d32baadbbpueqt.cloudfront.net/Homepage/7145deaa-8296-49ba-9964-061fded28226.jpg"
+            alt="Error"
+          />
+        </div>
+      </div>
+  
+      <!-- <--------------Crouser-3 start--------------> 
+          <p class="allP">NEWLY LAUNCHED</p>
+  
+          <div id="cr3">
+              <img
+                class="crauser3"
+                src="https://d32baadbbpueqt.cloudfront.net/Homepage/f25612b8-b6b8-4d08-8704-def43067c472.jpg"
+                alt="error"
+              />
+              <button class="btn5">></button>
+              <button class="btn6"><</button>
+            </div>
+      <!-- <--------------Crouser-3 end--------------> 
+          <p class="allP">SUPER SAVERS</p>
+  <!-- <------Cards-2 start----------->
+      <div class="container">
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_cbc3a2d6-9266-467e-a973-017e3c65d5cf.jpg?v=1649433283"
+              alt="Error"
+            />
+            <p>CHEAT SHEET CLARIFYING MASK</p>
+            <p><span class="sp1">₹99</span> ₹1099 <span class="sp2">(50%off)</span></p>
+            <div><p>ADD TO CART</p></div>
+          </div>
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_cbc3a2d6-9266-467e-a973-017e3c65d5cf.jpg?v=1649433283"
+              alt="Error"
+            />
+            <p>AIR KISS POWDER LIPSTICK</p>
+            <p><span class="sp1">₹1198</span> ₹999 <span class="sp2">(16%off)</span></p>
+            <div><p>SHOP NOW</p></div>
+          </div>
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/2_bb525208-246a-4f40-b57f-d88372708398.jpg?v=1655308814"
+              alt="Error"
+            />
+            <p>BLING LEADER SUNSCREEN</p>
+            <p><span class="sp1">₹1546</span> ₹1249 <span class="sp2">(19%off)</span></p>
+            <div><p>CHOOSE PRODUCTS</p></div>
+          </div>
+          <div class="card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_e4b6c948-178e-4bfe-a3b3-926119dea615.jpg?v=1649865681"
+              alt="Error"
+            />
+            <p>SMUDGE ME NOT LIQUID LIPSTICK</p>
+            <p><span class="sp1">₹996</span> ₹799 <span class="sp2">(19%off)</span></p>
+            <div><p>CHOOSE PRODUCTS</p></div>
+          </div>
+        </div>
+        <!-- <------Cards-2 end----------->
+          <p class="allP">TOP PICKS OF THE WEEK</p>
+          <div class="hotDeal">
+              <div>
+                  <img
+                  src="https://d32baadbbpueqt.cloudfront.net/Homepage/2589c084-0746-47b8-bbea-9150a035ce02.jpg"
+                  alt="Error"
+                  />
+          </div>
+          <div>
+            <img
+            src="https://d32baadbbpueqt.cloudfront.net/Homepage/1e7e7626-944b-4b79-b60f-4f26e13801ed.jpg"
+            alt="Error"
+            />
+          </div>
+          <div>
+            <img
+              src="https://d32baadbbpueqt.cloudfront.net/Homepage/17a7167c-09e5-4dcb-a73d-f74df79bf03b.jpg"
+              alt="Error"
+              />
+          </div>
+      </div>
+      <!-- <------Cards-3 start----------->
+          <p class="allP">GIFTING</p>
+          <div class="container">
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg?v=1623073051"
+                  alt="Error"
+                />
+                <p>MATT AS HELL CRAYON LIPSTICK</p>
+                <p><span class="sp1">₹1799</span> ₹1099 <span class="sp2">(38%off)</span></p>
+                <div><p>CHOOSE PRODUCTS</p></div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_37e8dc88-a720-44ed-a5f3-1e0f0e95bc17.jpg?v=1649692645"
+                  alt="Error"
+                />
+                <p>WEDDING MAKEUP KIT</p>
+                <p><span class="sp1">₹2343</span> ₹1699 <span class="sp2">(37%off)</span></p>
+                <div><p>CHOOSE PRODUCTS</p></div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-minis-set-15520724582483.jpg?v=1620651966"
+                  alt="Error"
+                />
+                <p>SMUDGE ME NOT LIQUID LIPSTICK</p>
+                <p><span class="sp1">₹999</span> ₹799 <span class="sp2">(20%off)</span></p>
+                <div><p>CHOOSE PRODUCTS</p></div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_37e8dc88-a720-44ed-a5f3-1e0f0e95bc17.jpg?v=1649692645"
+                  alt="Error"
+                />
+                <p>DATE NIGHT MAKEUP KIT</p>
+                <p><span class="sp1">₹2193</span> ₹1599 <span class="sp2">(27%off)</span></p>
+                <div><p>CHOOSE PRODUCTS</p></div>
+              </div>
+            </div>
+            <!-- <------Cards-3 end----------->
+              <P class="allP">THIS OR THAT</P>
+              <div id="ToT">
+                  <div>
+                      <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/2494a8b7-f69b-4959-ad2c-80dbe1c85487.jpg" alt="Error">
+                  </div>
+                  <div>
+                      <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/de4412d4-cd17-4729-a2fd-017af2cdb609.jpg" alt="Error">
+                  </div>
+              </div>
+                 <!-- <------Cards-4 start----------->
+          <p class="allP">JUST-IN</p>
+          <div class="container">
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/Vineeta_s-Favourite-Makeup-kit---WBG-images.jpg?v=1657555460"
+                  alt="Error"
+                />
+                <p>VINEETA'S FAVOURITE MAKEUP KIT</p>
+                <p><span class="sp1">₹4243</span> ₹2999 <span class="sp2">(29%off)</span></p>
+                <div><p>SHOP NOW</p></div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_9909d205-c5f9-476d-9903-c4beffbfebb7.jpg?v=1637068160"
+                  alt="Error"
+                />
+                <p>ARCH ARIVAL BROW PEN</p>
+                <p> ₹499 </p>
+                <div><p>SELECT SHADE</p></div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/399160329-9-to-5-makeup-kit-wbg-01.jpg?v=1654013564"
+                  alt="Error"
+                />
+                <p>MONSOON MAKEUP KIT</p>
+                <p><span class="sp1">₹2344</span> ₹1799 <span class="sp2">(23%off)</span></p>
+                <div><p>SHOP NOW</p></div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/399160329-9-to-5-makeup-kit-wbg-01.jpg?v=1654013564"
+                  alt="Error"
+                />
+                <p>9 TO 5 MAKEUP KIT</p>
+                <p><span class="sp1">₹1346</span> ₹999 <span class="sp2">(25%off)</span></p>
+                <div><p>CHOOSE PRODUCTS</p></div>
+              </div>
+            </div>
+            <!-- <------Cards-4 end----------->
+              <p class="allP"><b>BEAUTY BLOG</b></p>
+          <div class="hotDeal">
+              <div>
+                  <img
+                  src="https://d32baadbbpueqt.cloudfront.net/Homepage/3d42df13-a169-43e3-82a0-e134d709aeb1.jpg"
+                  alt="Error"
+                  />
+          </div>
+          <div>
+            <img
+            src="https://d32baadbbpueqt.cloudfront.net/Homepage/802dd327-0ec5-4d3d-9e0f-0e8c72e0ba76.jpg"
+            alt="Error"
+            />
+          </div>
+          <div>
+            <img
+              src="https://d32baadbbpueqt.cloudfront.net/Homepage/d844f2ae-1718-4a6b-8203-97f2eacaf39b.jpg"
+              alt="Error"
+              />
+          </div>        
+      </div>
+      <!-- <------Cards-5 start----------->
+          <p class="allP">SKINCARE BASICS</p>
+          <div class="container">
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_3cb613fc-43c8-4763-b3e6-5ccf4761c0d5.jpg?v=1641570994"
+                  alt="Error"
+                />
+                <p>POWER CLAY MASK STICK</p>
+                <p>₹ 699</p>
+                <div><p>SELECT SHADE</p></div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/CCLipScrubWBG-3.jpg?v=1628610315"
+                  alt="Error"
+                />
+                <p>COFEE CULTURE LIP SCRUB</p>
+                <p> ₹ 299 </p>
+                <div><p>ADD TO CART</p></div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/CCEyeFirmingCreamWBG-3.jpg?v=1628610287"
+                  alt="Error"
+                />
+                <p>COFEE CULTURE EYE FIRMING CREAM</p>
+                <p>₹ 399</p>
+                <div><p>ADD TO CART</p></div>
+              </div>
+              <div class="card">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0906/2558/products/Hyaluronic-Serum-3_1.jpg?v=1626423730"
+                  alt="Error"
+                />
+                <p>AQUAHOLIC HYALURONIC SERUM</p>
+                <p> ₹499</p>
+                <div><p>ADD TO CART</p></div>
+              </div>
+            </div>
+            <!-- <------Cards-5 end----------->
+              <p class="allP">EXPLORE</p>
+              <div id="exp">
+                  <div>
+                      <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/94392987-596e-4b14-b378-86a4b43544c0.jpg" alt="Error">
+                  </div>
+                  <div>
+                      <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/76b4a358-adfb-4f52-944b-8bb49f57b4a9.jpg" alt="Error">
+                  </div>
+                  <div>
+                      <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/c94a0d07-3912-4b78-a502-ee10907b3a63.jpg" alt="Error">
+                  </div>
+                  <div>
+                      <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/17ea5862-3403-4b13-a7fc-e7736aaeee97.jpg" alt="Error">
+                  </div>
+              </div>
+  
+            <div id="endP"><p>READ MORE ABOUT BEAUTY KART</p></div>
+      <!----------------Content End------------------->
+  
+      <!----------------Footer Start------------------->
+      <div id="footer">
+        <img src="data:image/jpeg;base64,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" alt="" />
+        <div id="media">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-tumblr"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div id="bigger">
+          <div class="stage1">
+            <div>
+              <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+              <form id="form2">
+                <input type="text" class="ip2" placeholder="Enter Your Email" />
+                <input type="Submit" value="Sign Up" />
+              </form>
+            </div>
+  
+            <div>
+              <p>GET THE NEW BEAUTY APP TODAY.</p>
+              <div class="stores">
+                <div><p>Tap into a better shopping experience.</p></div>
+                <img
+                  src="https://in.sugarcosmetics.com/playstore.png"
+                  alt="error"
+                />
+                <img
+                  src="https://in.sugarcosmetics.com/apple-store.png"
+                  alt="error"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="stage2">
+            <p>INFORMATION</p>
+            <div class="info">
+              <div>Stores</div>
+              <div>Stores</div>
+              <div>Returns</div>
+              <div>FAQs</div>
+              <div>FAQs</div>
+            </div>
+          </div>
+          <div class="stage3">
+            <p>GET IN TOUCH</p>
+            <div class="cont">
+              <div>
+                <p>Call us at</p>
+                <p>1800-209-9933</p>
+                <p>Monday to Friday : 9 AM to 7 PM</p>
+              </div>
+              <div>
+                <p>Support</p>
+                <p>hello@beautykart.com</p>
+              </div>
+              <div>
+                <p>Careers</p>
+                <p>We're hiring!</p>
+              </div>
+              <div>
+                <p>PRESS & MEDIA</p>
+                <p>pr@beautykart.com</p>
+              </div>
+              <div>
+                <p>INFLUENCER COLLAB</p>
+                <p>JOIN US</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copy">
+          <p>Copyright © 2022 Beauty Kart. All rights reserved.</p>
+        </div>
+      </div>
+      <!----------------Footer End------------------->
+            
+</body>
+<script src="index.js"></script>
+</html>
